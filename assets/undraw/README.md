@@ -1,4 +1,4 @@
-These drawings are all from [undraw.co](https://undraw.co), and were generated using the color #0B849A.
+These drawings are all from [undraw.co](https://undraw.co), and were generated using the color #00AF75
 
 The license for these drawings is replicated here:
 
