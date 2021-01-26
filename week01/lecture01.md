@@ -55,6 +55,15 @@ In this class we will:
 
 ---
 
+## Adversaries
+
+You and I [are not adversaries](https://jeffreymoro.com/blog/2020-02-13-against-cop-shit/).
+
+We are not set up to struggle, to fight for grades and for points.
+
+This is meant to be a collaborative environment, where we can choose to be vulnerable, to ask questions, to admit when we need help *and* to share when we are excited or proud.
+
+---
 
 ## Syllabus
 
