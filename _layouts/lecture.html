@@ -27,6 +27,10 @@
 <script src="https://cdn.jsdelivr.net/npm/vega-embed"></script>
 {% endif %}
 
+{% if page.include_p5js %}
+<script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+{% endif %}
+
 </style>
 
   <link rel="stylesheet/less" type="text/css" href="{{ '/assets/styles.less' | relative_url }}" />

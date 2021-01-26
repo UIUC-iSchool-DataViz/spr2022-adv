@@ -1,33 +1,20 @@
 instructor: 
   name: Matthew Turk
   email: mjturk@illinois.edu
-  office: XXX
-  office_hours: XXX
-tas:
-  -
-    name: Name1
-    email: Email1
-    office: ZZZ
-    office_hours: XYZ
-  -
-    name: Name2
-    email: email2
-    office: Office2
-    office_hours: OfficeHours2
+  office: Online
+  office_hours: By appointment
+tas: []
 course:
-  name: COURSENAME
-  number: COURSENUM
-  semester: SEMESTER, YEAR
-  location: LOCATION
-  time: DAYTIME
-  credit_hours: Z
+  name: Advanced Data Visualization
+  number: IS545
+  semester: Spring, 2021
+  location: Online
+  time: Tue & Thu, 9:30-10:50AM
+  credit_hours: 4
 urls:
   -
-    name: Jupyterhub
-    url: https://example.com/
-  -
-    name: Slack
-    url: https://example.com/
+    name: Campuswire
+    url: https://campuswire.com/c/G711966E6/feed
   - 
     name: Moodle
-    url: https://example.com/
+    url: https://learn.illinois.edu/course/view.php?id=56980
