@@ -3,11 +3,20 @@ layout: week
 visible: true
 icon: undraw_Goals_re_lu76.svg
 notitle: true
-examples: []
-#- filename: lecture02_examples.ipynb
-#type: ipynb
-#title: Markdown and Jupyter Examples
-#description: A handful of cells showing some markdown and how to execute in Jupyter notebooks
+examples:
+  - url: https://editor.p5js.org/matthewturk/sketches/QPrxPObHb
+    type: external
+    title: Initial Click Example
+    description: Setting up a double-clicking variable in p5js
+  - url: https://editor.p5js.org/matthewturk/sketches/mblCycCQj
+    type: external
+    title: Square Drawing Example
+    description: Types of stroke joines in p5js
+  - url: https://editor.p5js.org/matthewturk/sketches/x3HOpqauw
+    type: external
+    title: Double-clicking Example
+    description: Double-clicking on circles with p5js
+
 ---
 
 # Introduction
