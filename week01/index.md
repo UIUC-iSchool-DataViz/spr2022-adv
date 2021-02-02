@@ -4,18 +4,10 @@ visible: true
 icon: undraw_Goals_re_lu76.svg
 notitle: true
 examples:
-  - url: https://editor.p5js.org/matthewturk/sketches/QPrxPObHb
+  - url: https://editor.p5js.org/matthewturk/collections/8bf73jNlh
     type: external
-    title: Initial Click Example
-    description: Setting up a double-clicking variable in p5js
-  - url: https://editor.p5js.org/matthewturk/sketches/mblCycCQj
-    type: external
-    title: Square Drawing Example
-    description: Types of stroke joines in p5js
-  - url: https://editor.p5js.org/matthewturk/sketches/x3HOpqauw
-    type: external
-    title: Double-clicking Example
-    description: Double-clicking on circles with p5js
+    title: Examples collection
+    description: A set of the p5js examples we built in class
 
 ---
 
