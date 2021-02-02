@@ -4,6 +4,11 @@ layout: assignment
 description: Prototype a board game visualization
 ---
 
+<div class="columns" markdown="1">
+
+<div class="column" markdown="1">
+
+
 Hisss the game uses the six colors yellow, orange, blue, green, red and purple.
 It contains six body cards of each of these pairs of colors: Yellow-Orange,
 Blue-Green, Green-Yellow, Orange-Red, Blue-Purple, and Red-Purple.
@@ -21,3 +26,10 @@ Some links about Hisss:
 
  * [Hisss Product Page](https://gamewright.com/product/Hisss)
  * [Hisss Rules](https://www.fgbradleys.com/rules/rules4/Hisss%20-%20rules.pdf)
+
+
+</div>
+<div class="column is-one-third">
+<img src="https://gamewright.com/images/ten/GAMEWRIGHT-5219.jpg">
+</div>
+</div>
