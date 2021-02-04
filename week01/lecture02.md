@@ -1,5 +1,5 @@
 ---
-title: Welcome!
+title: More with p5js
 layout: lecture
 tags:
   - overview
