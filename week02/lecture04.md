@@ -9,14 +9,6 @@ description: >-
 date: 2021-02-04
 ---
 
-## Paper Review
-
-Today I will be reviewing "Crameri, Fabio, Grace E. Shephard, and Philip J. Heron. 2020. “The Misuse of Colour in Science Communication.” Nature Communications 11 (1): 5444. https://doi.org/10.1038/s41467-020-19160-7."
-
-Paper review assignments will be issued soon.
-
----
-
 ## Matplotlib, bit-by-bit
 
 We're going to dig into [matplotlib](https://matplotlib.org/), starting with
