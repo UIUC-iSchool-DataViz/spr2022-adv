@@ -1,10 +1,10 @@
 ---
-title: Getting Started with Interactivity
+title: Web Viz, the Browser, and Interactivity
 layout: lecture
 tags:
-  - traitlets
-  - bqplot
-  - interactivity
+  - web
+  - javascript
+  - vega-lite
 description: >-
   Getting started with interactivity and bqplot
 date: 2021-02-11
