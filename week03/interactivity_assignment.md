@@ -1,5 +1,5 @@
 ---
-title: Hisss
+title: Beginning Interactivity
 layout: assignment
 description: Standalone Interactive Visualization
 ---
