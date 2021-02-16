@@ -196,8 +196,63 @@ First, let's make our basic outline.
 
 Let's now visualize our statistics using vega-lite.  How should we do this?
 
+<div class="fragment" data-markdown="true">
+
+We'll try using [Iodide](https://alpha.iodide.io/) for this.
+
+</div>
+
 ---
 
 ## Iodide
 
-If you like, you can utilize [Iodide](https://alpha.iodide.io/) for this.
+[Iodide](https://iodide.io) is a project originally from Mozilla for generating literate combinations of Javascript, Python (via [Pyodide](https://hacks.mozilla.org/2019/04/pyodide-bringing-the-scientific-python-stack-to-the-browser/)) and Markdown to a single document-based interface.
+
+The documents you'll create will appear to be similar to Notebooks, and they share some of the same attributes and behaviors, but they will be different in how you create new cells, reorder cells, and version them.
+
+---
+
+## Iodide: IOMD
+
+The basic format in Iodide is that of a modified `jsmd` format.  To execute a "cell" you press shift-enter, as you normally would.  But, the process of creating a *new* cell is by creating a newline that starts with `%%` and the cell-type.
+
+The basic cell types we'll use are:
+
+ * `%% js` for javascript source code
+ * `%% py` for python source code
+ * `%% md` for markdown
+ * `%% css` for CSS 
+ * `%% fetch` for downloading/fetching resources
+
+There are two additional types, `%% plugin` and `%% raw`, but we won't be using them much.
+
+---
+
+## Iodide: Getting Started
+
+Let's get started.  Log in to [`iodide.io`](https://iodide.io/) and let's create a new notebook.
+
+Then, add this code in a Javascript cell:
+
+```javascript
+var myString = "Hello there!";
+```
+
+and execute it.  What happens in your `Workspace` area?
+
+---
+
+## Iodide: Vega-Lite
+
+We'll get started using vega-lite in Iodide 
+
+```
+%% fetch
+js: https://cdn.jsdelivr.net/npm/vega@5
+%% fetch
+js: https://cdn.jsdelivr.net/npm/vega-lite@4
+%% fetch
+js: https://cdn.jsdelivr.net/npm/vega-embed@6
+```
+
+Now, let's see if we can build a few simple charts.
