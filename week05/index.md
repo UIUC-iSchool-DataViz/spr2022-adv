@@ -3,7 +3,15 @@ layout: week
 visible: true
 icon: undraw_palette_110c.svg
 notitle: true
-examples: []
+examples:
+  - url: https://alpha.iodide.io/notebooks/6996/
+    type: external
+    title: d3 part one
+    description: Creating an SVG and looking at scales
+  - url: https://alpha.iodide.io/notebooks/7003/
+    type: external
+    title: d3 part two
+    description: Transitions, other scales, and helpful d3 built-ins
 
 ---
 
