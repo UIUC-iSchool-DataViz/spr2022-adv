@@ -12,6 +12,14 @@ examples:
     type: external
     title: d3 part two
     description: Transitions, other scales, and helpful d3 built-ins
+  - url: https://alpha.iodide.io/notebooks/7051/
+    type: external
+    title: d3 part three
+    description: Our first try at event handling
+  - url: https://github.com/matthewturk/is545-spr2021-example/
+    type: external
+    title: Example website repo
+    description: The example website repo we created in class.
 
 ---
 
