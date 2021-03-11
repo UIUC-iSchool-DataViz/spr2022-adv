@@ -89,21 +89,11 @@ I want *you* to think of *two* numbers between 1 and 100, inclusive of the end p
 
 ## We can do this
 
-<div class="fig-container" data-style="width: 300px;" data-file="figures/quadtree.html" data-markdown=true>
+<div class="fig-container" data-style="width: 600px;" data-file="figures/quadtree.html" data-markdown=true>
 
 We can do this in d3 using a `quadtree` object.
-
-<p class = "fragment" data-markdown=true>
-
 Given a set of data objects, we can create a quadtree to contain them.
-
-</p>
-
-<p class="fragment" data-markdown=true>
-
 This lets us `visit` and `find` things *very* efficiently.
-
-</p>
 
 ---
 
