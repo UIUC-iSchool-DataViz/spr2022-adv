@@ -6,6 +6,8 @@ tags:
   - d3
   - transformations
   - colors
+description: >-
+  What are transformations, and how do we apply these to colors?
 ---
 
 # Today

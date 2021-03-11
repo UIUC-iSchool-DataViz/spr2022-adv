@@ -4,6 +4,8 @@ layout: lecture
 tags:
   - publishing
   - d3
+description: >-
+  What are some ways to publish our visualizations on the web?
 ---
 
 ## Review

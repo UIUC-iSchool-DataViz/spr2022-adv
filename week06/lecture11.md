@@ -1,9 +1,11 @@
 ---
-title: Publishing and more d3
+title: Re-charting the Course
 layout: lecture
 tags:
   - publishing
   - d3
+description: >-
+  Let's rethink our strategy for this class and talk about what's next.
 ---
 
 ## Review of Us

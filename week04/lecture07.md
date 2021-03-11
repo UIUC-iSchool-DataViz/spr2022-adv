@@ -3,6 +3,8 @@ title: Setting up vega-lite
 layout: lecture
 include_vega: true
 setup_script: setup_script.js
+description: >-
+  Getting started with vega-lite
 ---
 
 ## Setting up Vega-lite
