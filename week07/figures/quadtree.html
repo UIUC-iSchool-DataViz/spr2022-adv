@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js" integrity="sha512-5xkNvFVCctXwOszeifE8pzjyDFlHvHDCKIrhwmuSbCtTHqc7IhA6/1tTNYXE8WmYvwP5KFQegCS1QRR4poYgjg==" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-lite"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-embed"></script>
+<style>
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="vis"></div>
+    </div>
+</body>
+<script type="text/javascript">
+
+    const N1 = 1250, N2 = 500, N3 = 300;
+
+    const svg = d3.select("#vis").append("svg").attr("width", 600).attr("height", 600).attr("viewBox", [-2.5, -2.5, 5, 5]);
+    const rng1 = d3.randomNormal(0.0, 0.25);
+    const rng2 = d3.randomNormal(0.5, 0.5);
+    const rng3 = d3.randomNormal(-1.0, 0.25);
+    const x = [].concat(d3.range(N1).map(_ => rng1()))
+                .concat(d3.range(N2).map(_ => rng2()))
+                .concat(d3.range(N3).map(_ => rng3()))
+                .map( v => Math.max(Math.min(v, 1.999), -1.999));
+    const y = [].concat(d3.range(N1).map(_ => rng2()))
+                .concat(d3.range(N2).map(_ => rng3()))
+                .concat(d3.range(N3).map(_ => rng1()))
+                .map( v => Math.max(Math.min(v, 1.999), -1.999));
+    console.log(d3.extent(x), d3.extent(y));
+    const coords = d3.shuffle(d3.zip(x, y).map( v => ({x: v[0], y: v[1]})));
+    const circleGroup = svg.append("g").attr("id", "circlegroup");
+    const treeGroup = svg.append("g").attr("id", "quadtree");
+    const quadtree = d3.quadtree().x(d=>d.x).y(d=>d.y).addAll(coords);
+
+    function setup() {
+        circleGroup
+        .selectAll("circle")
+        .data(coords)
+        .enter()
+        .append("circle")
+        .attr("cx", d=>d.x)
+        .attr("cy", d=>d.y)
+        .attr("r", 0.0)
+        .style("fill", "steelblue")
+        .style("opacity", 0.0);
+
+        quadtree.visit((node, x0, y0, x1, y1) => {
+            treeGroup
+            .append("rect")
+            .attr("x", x0)
+            .attr("y", y0)
+            .attr("width", x1 - x0)
+            .attr("height", y1 - y0)
+            .style("fill", "none")
+            .style("stroke", "black")
+            .style("stroke-width", 0.005)
+            .style("stroke-opacity", 0.0);
+        });
+    }
+
+
+    function circleVisible() {
+        return circleGroup
+        .selectAll("circle")
+        .transition().delay((d, i) => i*2)
+        .style("opacity", 1)
+        .attr("r", 0.02)
+        .end();
+    }
+
+    function circleInvisible() {
+        return circleGroup
+        .selectAll("circle")
+        .transition()
+        .style("opacity", 0.0)
+        .attr("r", 0.0)
+        .end();
+    }
+
+    function rectVisible() {
+        treeGroup
+        .selectAll("rect")
+        .transition()
+        .delay((d, i) => i * 100)
+        .style("stroke-opacity", 1.0);
+    }
+
+    function rectInvisible() {
+        treeGroup
+        .selectAll("rect")
+        .transition()
+        .style("stroke-opacity", 0.0);
+    }
+
+    setup();
+    var _transitions = [
+    {
+        transitionForward: () => circleVisible(),
+        transitionBackward: () => circleInvisible()
+    },
+    {
+        transitionForward: () => rectVisible(),
+        transitionBackward: () => rectInvisible()
+    }
+    ];
+
+</script>
+</html>
