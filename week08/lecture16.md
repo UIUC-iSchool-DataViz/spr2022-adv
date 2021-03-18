@@ -120,6 +120,19 @@ Vertices map to one or more fragments, which then get rasterized.
 
 ## Vertices, Fragments and GLSL - II
 
+Our graphics pipeline will consist of essentially two "phases" from our perspective.
+
+The first is the **vertex** phase.  This is where we take our vertices and their
+attributes, and transform them into something that we can apply in the
+coordinate space of our output.  The output from this should be a
+`gl_Position`, which is a special variable name.  You can also output "varying"
+variables, but we won't get into them yet.
+
+The second phase is the **fragment** phase.  In this phase we take our values
+and turn them into a set of colors; the mapping between vertices and fragments
+may not be 1:1, as fragments occupy the space occluded by the positions output
+from the vertex shader.  Our primary output from this will be `gl_FragColor`.
+
 ---
 
 ## Getting started with Regl
@@ -127,3 +140,9 @@ Vertices map to one or more fragments, which then get rasterized.
 We're going to explore some of this using `regl`, which is a stateless
 javascript framework for WebGL.  It reduces the complexity of many of the
 operations required to get WebGL visualizations up and running.
+
+http://regl.party/examples
+http://regl.party/api
+
+We'll walk through a bit of the ways that Regl works, and how to set up
+visualizations.  We'll explore our trees dataset if we have time.
