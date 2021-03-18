@@ -1,7 +1,7 @@
 ---
 layout: week
 visible: true
-icon: ~/undraw_3d_modeling_h60h.svg
+icon: undraw_3d_modeling_h60h.svg
 notitle: true
 examples: []
 
