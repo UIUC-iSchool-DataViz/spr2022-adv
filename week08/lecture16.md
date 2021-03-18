@@ -20,7 +20,7 @@ description: >-
 
 As we've moved through our classwork, we have been descending deeper and deeper into the depths of how graphics are displayed.
 
-<p class="fragment">We started very high-level, with `vega-lite`, where you could visualize data without writing any code.</p>
+<p class="fragment">We started very high-level, with vega-lite, where you could visualize data without writing any code.</p>
 
 <p class="fragment">Next up was digging deeper, using different web platforms to combine python and javascript.</p>
 
@@ -141,8 +141,8 @@ We're going to explore some of this using `regl`, which is a stateless
 javascript framework for WebGL.  It reduces the complexity of many of the
 operations required to get WebGL visualizations up and running.
 
-http://regl.party/examples
-http://regl.party/api
+ * http://regl.party/examples
+ * http://regl.party/api
 
 We'll walk through a bit of the ways that Regl works, and how to set up
 visualizations.  We'll explore our trees dataset if we have time.
