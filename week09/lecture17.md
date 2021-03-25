@@ -2,8 +2,10 @@
 title: Maps, Slow and Fast
 layout: lecture
 tags:
-  - opengl
-  - regl
+  - deckgl
+  - keplergl
+  - geojson
+  - geo
 description: >-
   This lecture starts the process of exploring OpenGL-type concepts for rendering, why we might be interested in using them, and how we can apply them to visualizations.
 ---
