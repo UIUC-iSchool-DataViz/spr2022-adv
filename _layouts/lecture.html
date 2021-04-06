@@ -34,6 +34,10 @@
 <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
 {% endif %}
 
+{% if page.include_mermaid %}
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+{% endif %}
+
 </style>
 
   <link rel="stylesheet/less" type="text/css" href="{{ '/assets/styles.less' | relative_url }}" />
@@ -61,7 +65,7 @@
     // - https://github.com/hakimel/reveal.js#configuration
     // - https://github.com/hakimel/reveal.js#dependencies
     
-    Reveal.initialize({
+    const revealPromise = Reveal.initialize({
         fragments: true,
         fragmentInURL: true,
         hash: true,
@@ -80,7 +84,12 @@
         reveald3: {
             runLastState: false
         }
-    });
+        });
+    {% if page.include_mermaid %}
+        revealPromise.then( () => {
+            mermaid.initialize({startOnLoad:true})
+        });
+    {% endif %}
 </script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
 {% if page.setup_script %}
