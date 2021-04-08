@@ -154,14 +154,17 @@ def make_plot(plot_id, marker_type):
 
 ## Flask: Templates I
 
+*NOTE: For all template examples, to make sure this renders on Github Pages, I've changed the double curly brackets to single, and for the curly bracket with a percent, it's just a percent.  Adjust that accordingly!*
+
 Flask uses Jinja2 for template rendering.  Jinja is a rather capable
 templating engine that accepts variables, allows for conditional
 execution, and also allows template composition.
 
+
 Most simply, you can `render_template` in Flask and supply a couple variables.  For instance, your template might look like:
 
 ```
-Hello, there!  It's good to meet you, {{name}}.
+Hello, there!  It's good to meet you, {name}.
 ```
 
 Inside your Flask app, you can render this template:
@@ -184,14 +187,14 @@ Because of how we have structured our files, flask will look for
 Not only can you include variables, but you can also do conditionals and basic flow control.
 
 ```
-Why, hello there, {{name}}!
+Why, hello there, {name}!
 
-{% if name == 'Matt' %}
+% if name == 'Matt' %
 (It's good to see you again, Matt.
-{% endif %}
+% endif %
 ```
 
-You can iterate using `{% for item in collection %}`, terminated by `{% endfor %}`, and you can apply "filters" to variables with the `|` operator inside your bracket pair.
+You can iterate using `% for item in collection %`, terminated by `% endfor %`, and you can apply "filters" to variables with the `|` operator inside your bracket pair.
 
 ---
 
@@ -208,8 +211,8 @@ templates/
   footer.html
 ```
 
-You can include these by using combinations of `include 'header.html'`,
-defining `block myblockname` / `endblock` setups and composing them.  These
+You can include these by using combinations of `%include 'header.html'%`,
+defining `%block myblockname%` / `%endblock%` setups and composing them.  These
 need to be inside bracket-percent blocks.
 
 ---
