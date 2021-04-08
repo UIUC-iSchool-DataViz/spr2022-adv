@@ -154,7 +154,9 @@ def make_plot(plot_id, marker_type):
 
 ## Flask: Templates I
 
-NOTE: For all template examples, to make sure this renders on Github Pages, I've changed the double curly brackets to single, and for the curly bracket with a percent, it's just a percent.  Adjust that accordingly!
+Important Caveat: For all template examples, to make sure this renders on
+Github Pages, I've changed the double curly brackets to single, and for the
+curly bracket with a percent, it's just a percent.  Adjust that accordingly!
 
 Flask uses Jinja2 for template rendering.  Jinja is a rather capable
 templating engine that accepts variables, allows for conditional
