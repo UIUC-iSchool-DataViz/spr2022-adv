@@ -1,6 +1,6 @@
 ---
 layout: week
-visible: true
+visible: false
 icon: undraw_adventure_map_hnin.svg
 notitle: true
 examples: []

@@ -1,6 +1,6 @@
 ---
 layout: week
-visible: true
+visible: false
 icon: undraw_navigator_a479.svg
 notitle: true
 examples: []

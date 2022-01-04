@@ -1,6 +1,6 @@
 ---
 layout: week
-visible: true
+visible: false
 icon: undraw_Web_developer_re_h7ie.svg
 notitle: true
 examples: []

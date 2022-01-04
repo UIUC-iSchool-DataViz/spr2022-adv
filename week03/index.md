@@ -1,6 +1,6 @@
 ---
 layout: week
-visible: true
+visible: false
 icon: undraw_Online_collaboration_re_bkpm.svg
 notitle: true
 examples: []

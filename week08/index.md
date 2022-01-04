@@ -1,6 +1,6 @@
 ---
 layout: week
-visible: true
+visible: false
 icon: undraw_3d_modeling_h60h.svg
 notitle: true
 examples: []

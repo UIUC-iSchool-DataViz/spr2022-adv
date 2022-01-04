@@ -3,18 +3,23 @@ instructor:
   email: mjturk@illinois.edu
   office: Online
   office_hours: By appointment
-tas: []
+tas:
+  -
+    name: Esther Tzu-Kun Hsiao
+    email: tkhsiao2@illinois.edu
+    office: Online!
+    office_hours: Appointment
 course:
   name: Advanced Data Visualization
   number: IS545
-  semester: Spring, 2021
-  location: Online
+  semester: Spring, 2022
+  location: Henry Administration Building, Room 156
   time: Tue & Thu, 9:30-10:50AM
   credit_hours: 4
 urls:
   -
     name: Campuswire
-    url: https://campuswire.com/c/G711966E6/feed
+    url: https://campuswire.com/c/G41BE1AAD/feed
   - 
     name: Moodle
     url: https://learn.illinois.edu/course/view.php?id=56980

@@ -1,6 +1,6 @@
 ---
 layout: week
-visible: true
+visible: false
 icon: undraw_Goals_re_lu76.svg
 notitle: true
 examples:
