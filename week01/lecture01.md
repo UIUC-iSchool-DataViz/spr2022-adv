@@ -8,19 +8,20 @@ tags:
 description: >-
   The syllabus for the course, what we're going to talk about,
   and some intro to p5js.
-date: 2021-01-26
+date: 2022-01-18
 include_p5js: true
 ---
 
 # Basics
 
  * Tuesday and Thursday, 9:30-10:50AM
+ * Room 156 of Henry Administration Building
  * Matthew Turk - `mjturk@illinois.edu`
- * Office Hours: Fridays 9-11 (please make appointment)
+ * Office Hours: Please make an appointment
 
-http://github.com/UIUC-iSchool-DataViz/spr2021-adv/
+http://github.com/UIUC-iSchool-DataViz/spr2022-adv/
 
-[spring2021-adv](uiuc-ischool-dataviz.github.io/spring2021-adv/)
+[spring2021-adv](uiuc-ischool-dataviz.github.io/spring2022-adv/)
 
 ---
 
@@ -30,6 +31,16 @@ Please see the Land Acknowledgment in the Syllabus.
 
 [More information can be found on the Chancellor's
 Website.](https://chancellor.illinois.edu/land_acknowledgement.html)
+
+---
+
+# CampusWire
+
+We will use CampusWire for chat, as well as for some office hours and live
+sessions.  You have to be "invited" to the course, and I have posted the invite
+link in our Zoom chat today.
+
+Let's all take a moment to get set up in CampusWire.
 
 ---
 
@@ -142,26 +153,51 @@ On Thursday, I'll go through this in more detail, with a paper presentation of m
 
 ## Class Materials
 
-Class materials will be made available online at https://uiuc-ischool-dataviz.github.io/spr2021-adv/ .
+Class materials will be made available online at https://uiuc-ischool-dataviz.github.io/spr2022-adv/ .
 
-Lecture recordings will be available on the Moodle page, along with assignment submissions.
+Lecture recordings will be available on the Canvas page, along with assignment submissions.
 
 Discussions, including general chit-chat, will happen on our Campuswire instance.
 
 ---
 
-## Technical Setup
+## Technical Setup: Javascript
 
 For the most part we will be utilizing online visualization editors and systems.  Specifically:
 
  * [ObservableHQ](https://observablehq.com/)
  * [Glitch](https://glitch.com/)
- * [Whole Tale](https://wholetale.org/)
 
-We will also utilize (and develop for) Jupyter and Python, and for that you will need a local installation of a python distribution.
-I recommend using Python 3.8 or 3.9, and installing from Anaconda or conda-forge.
+However!  We will at some point begin to use *local* development environments as well.
 
-We will likely *not* do considerable local Javascript development that requires a Javascript development stack.
+---
+
+## Technical Setup: Python
+
+We will also utilize (and develop for) Jupyter and Python, and for that you
+will need a local installation of a python distribution.  I recommend using
+Python 3.9 or 3.10, and installing from Anaconda or conda-forge.
+
+You will need to have Jupyterlab installed locally, or have access to an
+installation you are able to modify, to install extensions and so forth.
+
+---
+
+## Technical Setup: Development Environment
+
+We will at times be developing locally.  While I will not mandate a particular
+technology stack, I recommend these items; I **strongly** encourage you to
+follow online instructions on getting set up with a local development
+environment on the Visual Studio Code website.
+
+ * VS Code
+ * A nodejs and npm installation accessible within VS Code
+ * Extensions:
+    * Python extension (by Microsoft)
+    * Github extension (by Github)
+    * Github Classroom extension (by Github)
+
+We will not be using this for a few weeks.
 
 ---
 
@@ -169,8 +205,8 @@ We will likely *not* do considerable local Javascript development that requires 
 
 Roughly speaking, we'll cover these technologies, and maybe a few others:
 
- * Matplotlib
  * P5JS
+ * Matplotlib
  * Vega-lite and ecosystem
  * D3
  * Glitch
