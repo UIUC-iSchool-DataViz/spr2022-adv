@@ -1,6 +1,6 @@
 ---
 layout: week
-visible: false
+visible: true
 icon: undraw_informed_decision_p2lh.svg
 notitle: true
 examples: 
