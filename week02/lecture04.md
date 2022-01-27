@@ -42,13 +42,19 @@ Specifically:
 
 ---
 
-## Whole Tale
+## Options
 
-Today we're going to be using Whole Tale.
+There are three ways I encourage you to utilize matplotlib for this portion:
 
-[wholetale.org](https://wholetale.org/)
-
-You can log in using your Illinois netid.  Create a new Tale, with the Jupyter Lab environment.
+ 1. **Using your local machine**.  Having a fully-working jupyterlab would be my preference for this portion of the class.
+ 2. **Using jupyterlab lite**.  This is a webassembly version of jupyterlab
+    that can run most packages we will need, but which we can't quite use for
+    large datasets.  I have built one at
+    [uiuc-ischool-dataviz.github.io/classwork/](https://uiuc-ischool-dataviz.github.io/classwork/)
+    that you can utilize.
+ 3. **Using Whole Tale**.  [Whole Tale](https://wholetale.org/) is a hosted,
+    data-rich instance of analysis tools and visualization platforms.  We may
+    use it later in the semester to make data distribution more convenient.
 
 ---
 
