@@ -1,6 +1,6 @@
 ---
 layout: week
-visible: false
+visible: true
 icon: undraw_Inspection_re_tbt7.svg
 notitle: true
 examples: []

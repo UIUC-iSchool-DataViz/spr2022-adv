@@ -1,6 +1,6 @@
 ---
 layout: week
-visible: false
+visible: true
 icon: undraw_palette_110c.svg
 notitle: true
 examples:
