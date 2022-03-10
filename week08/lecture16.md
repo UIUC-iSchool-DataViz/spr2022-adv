@@ -143,14 +143,20 @@ processed in.  It is defined like this:
 
 ---
 
-## Putting this Together
+## Putting this Together with our RPG
 
-We can now put this together to construct a COVID-19 dashboard.
+Recall our RPG vega-lite definitions:
 
-It must have these characteristics:
+ * [Static display](https://gist.githubusercontent.com/matthewturk/3cfe1286946fd23e9790d2abea1548a8/raw/eafb4fd05cc076dc7731d6523bbf6ec39aa3ba6e/rpg_2.json).
+ * [Time varying](https://gist.githubusercontent.com/matthewturk/3cfe1286946fd23e9790d2abea1548a8/raw/eafb4fd05cc076dc7731d6523bbf6ec39aa3ba6e/rpg_3.json).
 
- * Linking states to county-level visualizations
- * Supplemental information about states, including an image
- * Time series for national cases
+How can we modify this such that we have characters defined with timestamped hit points?
 
-How can we utilize our transforms, filters and view composition to this end?
+```json
+{ ...
+  hp: [10, 23, 53]
+}
+```
+
+What set of operations would we need to conduct to make this viable for our
+time-series display, coupled with the static display?
