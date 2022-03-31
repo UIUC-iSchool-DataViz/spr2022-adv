@@ -380,6 +380,41 @@ Individually or in groups, let's build out the basis for this using matplotlib.
 
 ---
 
-## TTR: Implement
+## Implementation: Playing the Game
 
-Open up in VS Code your new project, and let's begin to transplant and make generic the previous section.
+Today, I have brought a copy of the game, and set up a sample "game state."  We
+will then play two or three rounds, tracking the state, and record each of
+those for visualization.
+
+Then we will discuss: which platforms are best for each type of representation
+that we have prototyped and brainstormed?
+
+(We will need one additional set of data beyond our Ticket to Ride dataset:
+city locations in latitude and longitude.)
+
+---
+
+## Implementation: Matplotlib
+
+(Draw what we expect we could see with matplotlib.)
+
+ * What can we represent (easily) in matplotlib?
+ * What is this interface suited to?  Why would we choose this?
+
+---
+
+## Implementation: vega-lite
+
+(Draw what we expect we could see with vega-lite.)
+
+ * What can we represent (easily) in vega-lite?
+ * What is this interface suited to?  Why would we choose this?
+
+---
+
+## Implementation: D3
+
+(Draw what we expect we could see with D3.)
+
+ * What can we represent (easily) in vega-lite?
+ * What is this interface suited to?  Why would we choose this?
