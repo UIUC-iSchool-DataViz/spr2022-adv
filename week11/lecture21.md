@@ -7,19 +7,8 @@ tags:
   - servers
   - jupyter-extensions
 description: >-
-  We'll start with following up on your projects and discussing what came up during office hours, then talk about how you can "get help" from online sources.
+  We'll talk about how you can "get help" from online sources, and then move on to server-side visualizations.
 include_mermaid: true
----
-
-## Assignment Wrap-Up
-
-<ul>
-<li class="fragment">Can you show us?</li>
-<li class="fragment">How was using D3?</li>
-<li class="fragment">Where did you get stuck?</li>
-<li class="fragment">What were you proud of?</li>
-</ul>
-
 ---
 
 ## Getting Help
@@ -30,16 +19,6 @@ include_mermaid: true
  * [vega-lite docs](https://vega.github.io/) -- the documentation for vega-lite is *very* extensively cross-referenced
 
 When I'm looking for a piece of information I'll often use particular "destination" keywords in google.  For instance, searing ``svg circle mdn`` will bring me to the exact right MDN page for the properties of an SVG circle.  Or, searching ``d3 scalelinear`` will get me to the page for linear scales.
-
----
-
-## Ticket to Ride
-
-Last time, we ended by asking for some pre-visualization prototypes of the game.
-
-Let's take a minute to walk through a few of these ideas.
-
-<p class="fragment">We're going to pause our TTR exploration for a lecture.</p>
 
 ---
 
@@ -152,7 +131,7 @@ import http.server
 
 class MyHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
-        if self.path == "index.html":
+        if self.path == "/index.html":
             self.send_response(200)
             self.send_header("Content-type", "text/html")
             self.end_headers()
@@ -161,7 +140,73 @@ class MyHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(404)
 
 def run(host, port):
-    httpd = http.server.HTTPServer(server_address, MyHandler)
+    httpd = http.server.HTTPServer((host, port), MyHandler)
+    httpd.serve_forever()
+
+if __name__ == "__main__":
+    run("localhost", 8000)
 ```
 
 What next?
+
+---
+
+## Passing Visualizations
+
+How do we pass a visualization back?
+
+```python
+
+import io
+import matplotlib.pyplot as plt
+d = io.BytesIO()
+
+plt.plot([1,2,3], [4,5,6])
+plt.savefig(d)
+```
+
+We now have what we *would* have had saved to a file in the object `d`.  `d`
+here acts like a file pointer and can be read from and supplied back to the
+server.  (But, just like a file pointer, it's currently pointed at the *end* of
+what it's written.)
+
+**Note**: This isn't really that safe!  You probably shouldn't implement this
+stuff on your own, and instead rely on frameworks.  But for our purposes, it's
+okay for just now.  Plus, the `BaseHTTPRequestHandler` has a `wfile` for just
+this purpose.
+
+---
+
+## Passing Visualizations
+
+How do we get this back?
+
+```python
+
+import http.server
+import io
+import matplotlib.pyplot as plt
+
+class MyHandler(http.server.BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == "/index.html":
+            self.send_response(200)
+            self.send_header("Content-type", "text/html")
+            self.end_headers()
+            self.wfile.write(open("index.html").read())
+        elif self.path == "/hi.png":
+            self.send_response(200)
+            self.send_header("Content-type", "image/png")
+            self.end_headers()
+            plt.plot([1,2,3], [4,5,6])
+            plt.savefig(self.wfile)
+        else:
+            self.send_response(404)
+
+def run(host, port):
+    httpd = http.server.HTTPServer((host, port), MyHandler)
+    httpd.serve_forever()
+
+if __name__ == "__main__":
+    run("localhost", 8000)
+```
