@@ -1,6 +1,6 @@
 ---
 layout: week
-visible: false
+visible: true
 icon: undraw_Server_re_twwj.svg
 notitle: true
 examples: []
