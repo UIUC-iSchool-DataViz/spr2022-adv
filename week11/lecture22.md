@@ -10,12 +10,6 @@ description: >-
   First we'll go through some basics of how web applications work, and write our own Hello World flask app.  Then we'll look at two frameworks for server-side visualizations.
 ---
 
-## Ticket to Ride Pre-Viz
-
-(Not to be confused with [Pre Vizsla](https://starwars.fandom.com/wiki/Pre_Vizsla))
-
----
-
 ## Flask
 
 Flask is a "micro-framework" that provides routing (i.e., mapping between URLs
