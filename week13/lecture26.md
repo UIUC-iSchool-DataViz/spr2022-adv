@@ -19,7 +19,7 @@ Requirements:
 It is to be a webpage, that includes both pre-generated and dynamic
 visualizations.
 
-Last time we introduced RevealJS, and next week we will discuss (briefly) Idyll.
+Over the next few classes we will discuss RevealJS, Svelte and (possibly) Idyll.
 
 ---
 
@@ -167,11 +167,7 @@ For this, we will be using Python to collaboratively explore what volume-filling
 Install yt and ipyvolume.
 
 ```
-!pip install install cython sympy unyt pooch
-```
-
-```
-!pip install git+https://github.com/yt-project/yt.git
+!conda install -c conda-forge yt ipyvolume pooch
 ```
 
 ---
