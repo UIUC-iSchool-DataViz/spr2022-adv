@@ -11,13 +11,15 @@ description: >-
 setup_script: setup_script.js
 ---
 
-## Final Lecture!
+## Final Week of Lectures
 
  * Thanks!
  * Three things I didn't get to:
     * PaperJS
     * Glitch
     * Idyll
+    * Svelte
+ * Collecting it all together
 
 We're going to talk about these in the context of [Explorable Explanations](https://explorabl.es/).
 
