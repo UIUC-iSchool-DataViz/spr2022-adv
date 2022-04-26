@@ -161,8 +161,8 @@ Installing it locally will enable you to build and upload to github pages
 
 ---
 
-## Tuesday
+## Next Tuesday
 
-On Tuesday we'll be presenting.  Plan to spend about five to ten minutes on your data and where you are at, along with your visualizations.
+On Tuesday we'll be presenting.  Plan to spend about ten minutes on your data and where you are at, along with your visualizations.
 
 They do not need to be final.
